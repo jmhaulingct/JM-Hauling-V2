@@ -12,3 +12,17 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .customer-reviews{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.review-card{margin:0;padding:26px;background:white;border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column}.review-stars{color:var(--navy);font-size:1.35rem;letter-spacing:3px}.review-card blockquote{margin:16px 0 22px;flex:1}.review-card blockquote p{margin:0}.review-card figcaption span{display:block;font-size:.85rem;margin-top:4px}.review-source{margin-top:22px;font-size:.9rem}@media(max-width:850px){.customer-reviews{grid-template-columns:1fr}}
+/* Review card contrast */
+.reviews .review-card,
+.reviews .review-card blockquote p {
+  color: var(--ink);
+}
+.reviews .review-card figcaption strong {
+  color: var(--navy);
+}
+.reviews .review-card figcaption span {
+  color: var(--muted);
+}
+.reviews .section-intro .kicker {
+  color: white;
+}
